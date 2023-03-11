@@ -5,7 +5,7 @@
 }
 
 .wrapper {
-    padding: 0 10%;
+    padding: 3% 10%;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -14,8 +14,9 @@
 
 }
 .header__title {
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
+    margin-bottom: 3%;
 }
 /* ------------------------------------------ */
 .main {
@@ -24,6 +25,8 @@
 .main__mem {
     width: 100%;
     margin: 0 auto;
+    padding-top: 1.5%;
+    cursor: pointer;
 }
 .main__mem:not(:last-child) {
     border-bottom: .1rem solid black;
@@ -44,7 +47,7 @@
     padding: 0.3% 1.5%;
 }
 .mem__title {
-    font-size: 2rem;
+    font-size: 4rem;
     transition: all .8s ease 0s;
 }
 .mem__button {
@@ -59,6 +62,7 @@
     width: 0;
     height: 0;
     text-align: center;
+    margin-bottom: 1%;
 
     transition: all .8s ease 0s;
 }
@@ -129,5 +133,50 @@
         background-repeat: no-repeat;
         transform: rotate(45deg);
         transition: all .8s ease 0s;
+    }
+}
+/* ------------------------------------------ */
+@media (max-width:1920px){
+    .header__title {
+        font-size: 3rem;
+    }
+    .mem__title {
+        font-size: 2rem;
+    }
+}
+@media (max-width:1200px){
+    .header__title {
+        font-size: 3rem;
+    }
+    .mem__title {
+        font-size: 2rem;
+    }
+    .mem__input:checked~label .mem__image{
+        width: 40%;
+        height: 40%;
+    }
+}
+@media (max-width:820px){
+    .header__title {
+        font-size: 2rem;
+    }
+    .mem__title {
+        font-size: 1.5rem;
+    }
+    .mem__input:checked~label .mem__image{
+        width: 60%;
+        height: 60%;
+    }
+}
+@media (max-width:320px){
+    .header__title {
+        font-size: 1.5rem;
+    }
+    .mem__title {
+        font-size: 1rem;
+    }
+    .mem__input:checked~label .mem__image{
+        width: 70%;
+        height: 70%;
     }
 }
